@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <header
+    class="css-1meb1r7"
+  >
+    <div
+      class="css-1n1y94f"
+    >
+      <div
+        class="css-199kefw"
+      >
+        <div
+          class="css-4cffwv"
+        >
+          <a
+            href="/"
+          >
+            <img
+              class="css-1u1uv2u"
+              src="logo.png"
+            />
+          </a>
+        </div>
+        <div
+          class="css-1cwf0tq"
+        >
+          <div
+            class="css-10hm5fg"
+          >
+            Matheus Gambati
+          </div>
+          <a
+            class="css-1eyjkyt"
+            href="https://github.com/mgambati"
+          >
+            Github
+          </a>
+          <a
+            class="css-1eyjkyt"
+            href="https://www.linkedin.com/in/matheusgambati/"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+`;
