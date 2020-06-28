@@ -7,7 +7,7 @@ import {
 import {
   CHARACTERS_RESPONSE_PAYLOAD,
   SINGLE_CHARACTERS_RESPONSE_PAYLOAD,
-} from "../api/__fixtures__/charactersRequests";
+} from "../../../app/mocks/resolvers/__fixtures__/charactersRequestsFixtures";
 
 describe("reducers and actions", () => {
   const loadCharactersArgs = { query: undefined, offset: 0 };
@@ -62,7 +62,7 @@ describe("reducers and actions", () => {
   });
 
   test(loadSingleCharacter.fulfilled.type, () => {
-    const characterId = "1011334";
+    const characterId = "1";
     const requestId = nanoid();
 
     const state = charactersReducer(

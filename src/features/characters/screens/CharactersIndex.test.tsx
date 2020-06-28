@@ -2,7 +2,7 @@ import React from "react";
 import { fireEvent, render, waitFor } from "../../../app/helpers/test-utils";
 import * as charactersApi from "../api/charactersApi";
 import CharactersIndex from "./CharactersIndex";
-import { CHARACTERS_RESPONSE_PAYLOAD } from "../api/__fixtures__/charactersRequests";
+import { CHARACTERS_RESPONSE_PAYLOAD } from "../../../app/mocks/resolvers/__fixtures__/charactersRequestsFixtures";
 
 const emptyPayload = {
   offset: 0,

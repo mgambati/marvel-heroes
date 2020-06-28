@@ -1,7 +1,7 @@
 import { Dictionary } from "@reduxjs/toolkit";
 import characterStorage from "./charactersStorage";
 import { EditableCharacterFields } from "../typings/charactersTypes";
-import { SINGLE_CHARACTERS_RESPONSE_PAYLOAD } from "../api/__fixtures__/charactersRequests";
+import { SINGLE_CHARACTERS_RESPONSE_PAYLOAD } from "../../../app/mocks/resolvers/__fixtures__/charactersRequestsFixtures";
 
 beforeEach(() => {
   jest.clearAllMocks();

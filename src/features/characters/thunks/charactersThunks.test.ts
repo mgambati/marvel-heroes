@@ -3,7 +3,7 @@ import * as charactersApi from "../api/charactersApi";
 import {
   CHARACTERS_RESPONSE_PAYLOAD,
   SINGLE_CHARACTERS_RESPONSE_PAYLOAD,
-} from "../api/__fixtures__/charactersRequests";
+} from "../../../app/mocks/resolvers/__fixtures__/charactersRequestsFixtures";
 import { setupMockedStore } from "../../../app/helpers/test-utils";
 
 const [mockStore, initialState] = setupMockedStore();
