@@ -31,7 +31,7 @@ function render(
     return (
       <ThemeProvider theme={BASE_THEME as Theme}>
         <BrowserRouter>
-          <Provider store={store}>{children}</Provider>
+          <Provider store={mockedStore}>{children}</Provider>
         </BrowserRouter>
       </ThemeProvider>
     );
