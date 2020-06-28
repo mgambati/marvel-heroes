@@ -6,7 +6,7 @@ import {
   createSelectStatusOfLoadSeriesByCharacter,
 } from "../selectors/seriesSelectors";
 import { loadSeriesByCharacter } from "../thunks/seriesThunks";
-import SeriesCard from "./SerieCard";
+import SerieCard from "./SerieCard";
 
 export interface SeriesListProps {
   characterId: string | number;
@@ -31,7 +31,7 @@ const SeriesList: FC<SeriesListProps> = ({ characterId }) => {
 
   if (status === "pending") {
     return (
-      <Flex sx={{ justifyContent: "center" }}>
+      <Flex sx={{ justifyContent: "center" }} data-testid='loading-spinner'>
         <Spinner />
       </Flex>
     );
@@ -40,7 +40,7 @@ const SeriesList: FC<SeriesListProps> = ({ characterId }) => {
   return (
     <Grid columns="1fr 1fr 1fr 1fr">
       {series?.map((id) => (
-        <SeriesCard key={id} id={id} />
+        <SerieCard key={id} id={id} />
       ))}
     </Grid>
   );
