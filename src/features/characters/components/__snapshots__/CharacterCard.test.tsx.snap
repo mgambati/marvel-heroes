@@ -4,7 +4,7 @@ exports[`renders correctly 1`] = `
 <div>
   <a
     data-testid="character-card"
-    href="/characters/1011334"
+    href="/characters/1"
   >
     <div
       class="css-y04738"
