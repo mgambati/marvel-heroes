@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <a
+    data-testid="character-card"
+    href="/characters/1011334"
+  >
+    <div
+      class="css-y04738"
+    >
+      <div
+        class="css-i9l3dq"
+      >
+        <div
+          class="css-nejryd"
+        />
+        <div
+          class="css-ojfau8"
+        >
+          <img
+            class="css-1eq687"
+            src="http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg"
+          />
+        </div>
+      </div>
+      <div
+        class="css-seap5o"
+      >
+        <div
+          class="css-ghx28c"
+        >
+          3-D Man
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+`;
