@@ -7,7 +7,7 @@ export interface SeriesCardProps {
   id: number | string;
 }
 
-const SeriesCard: FC<SeriesCardProps> = ({ id }) => {
+const SerieCard: FC<SeriesCardProps> = ({ id }) => {
   const selectSeriesById = useMemo(() => createSelectSeriesById(id), [id]);
 
   const series = useSelector(selectSeriesById);
@@ -23,6 +23,7 @@ const SeriesCard: FC<SeriesCardProps> = ({ id }) => {
         bg: "red.7",
         ":hover": { opacity: 0.8 },
       }}
+      data-testid='serie-card'
     >
       <AspectRatio ratio={1}>
         <Image
@@ -50,4 +51,4 @@ const SeriesCard: FC<SeriesCardProps> = ({ id }) => {
   );
 };
 
-export default SeriesCard;
+export default SerieCard;

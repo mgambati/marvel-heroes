@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    class="css-y04738"
+    data-testid="serie-card"
+  >
+    <div
+      class="css-i9l3dq"
+    >
+      <div
+        class="css-tmeqbf"
+      />
+      <div
+        class="css-ojfau8"
+      >
+        <img
+          class="css-dqm8hw"
+          src="http://i.annihil.us/u/prod/marvel/i/mg/5/a0/514a2ed3302f5.jpg"
+        />
+      </div>
+    </div>
+    <div
+      class="css-seap5o"
+    >
+      <div
+        class="css-ghx28c"
+      >
+        Avengers: The Initiative (2007 - 2010)
+      </div>
+    </div>
+  </div>
+</div>
+`;
