@@ -8,12 +8,15 @@ import thunk from "redux-thunk";
 import configureStore from "redux-mock-store";
 import { RootState, store } from "../store";
 import { BASE_THEME } from "../constants/BASE_THEME";
+import charactersReducer from "../../features/characters/slices/charactersSlice";
 
 export function setupMockedStore() {
   type DispatchExts = ThunkDispatch<RootState, void, AnyAction>;
   const middlewares = [thunk];
   const mockStore = configureStore<RootState, DispatchExts>(middlewares);
-  const initialState: RootState = {};
+  const initialState: RootState = {
+    characters: charactersReducer(undefined, { type: "@@INIT" }),
+  };
 
   return [mockStore, initialState] as [typeof mockStore, typeof initialState];
 }
