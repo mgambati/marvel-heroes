@@ -1,6 +1,7 @@
 {
   "name": "marvel-heroes",
   "version": "0.1.0",
+  "homepage": "https://mgambati.github.io/marvel-heroes/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.4.0",
