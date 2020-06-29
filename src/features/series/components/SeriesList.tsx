@@ -31,7 +31,7 @@ const SeriesList: FC<SeriesListProps> = ({ characterId }) => {
 
   if (status === "pending") {
     return (
-      <Flex sx={{ justifyContent: "center" }} data-testid='loading-spinner'>
+      <Flex sx={{ justifyContent: "center" }} data-testid="loading-spinner">
         <Spinner />
       </Flex>
     );

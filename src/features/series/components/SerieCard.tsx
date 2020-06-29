@@ -23,7 +23,7 @@ const SerieCard: FC<SeriesCardProps> = ({ id }) => {
         bg: "red.7",
         ":hover": { opacity: 0.8 },
       }}
-      data-testid='serie-card'
+      data-testid="serie-card"
     >
       <AspectRatio ratio={1}>
         <Image
