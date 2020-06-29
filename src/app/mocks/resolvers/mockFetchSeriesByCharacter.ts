@@ -7,9 +7,13 @@ export const mockFetchSeriesByCharacter = rest.get(
     const { id } = req.params;
 
     if (id === "1")
-      return res(ctx.json({ data: SERIES_BY_CHARACTER_RESPONSE_PAYLOAD }));
+      return res(
+        ctx.delay(200),
+        ctx.json({ data: SERIES_BY_CHARACTER_RESPONSE_PAYLOAD })
+      );
 
     return res(
+      ctx.delay(200),
       ctx.json({
         data: {
           offset: 0,

@@ -7,9 +7,13 @@ export const mockFetchCharactersById = rest.get(
     const { id } = req.params;
 
     if (id === "1")
-      return res(ctx.json({ data: SINGLE_CHARACTERS_RESPONSE_PAYLOAD }));
+      return res(
+        ctx.delay(200),
+        ctx.json({ data: SINGLE_CHARACTERS_RESPONSE_PAYLOAD })
+      );
 
     return res(
+      ctx.delay(200),
       ctx.status(404),
       ctx.json({
         code: 404,

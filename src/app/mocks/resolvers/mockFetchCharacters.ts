@@ -12,10 +12,16 @@ export const mockFetchCharacters = rest.get(
     const offset = req.url.searchParams.get("offset");
 
     if (nameStartsWith === "loki")
-      return res(ctx.json({ data: STARTS_WITH_CHARACTERS_RESPONSE_PAYLOAD }));
+      return res(
+        ctx.delay(200),
+        ctx.json({ data: STARTS_WITH_CHARACTERS_RESPONSE_PAYLOAD })
+      );
 
     if (parseInt(offset ?? "0") >= 2)
-      return res(ctx.json({ data: EMPTY_CHARACTERS_RESPONSE_PAYLOAD }));
-    return res(ctx.json({ data: CHARACTERS_RESPONSE_PAYLOAD }));
+      return res(
+        ctx.delay(200),
+        ctx.json({ data: EMPTY_CHARACTERS_RESPONSE_PAYLOAD })
+      );
+    return res(ctx.delay(200), ctx.json({ data: CHARACTERS_RESPONSE_PAYLOAD }));
   }
 );
