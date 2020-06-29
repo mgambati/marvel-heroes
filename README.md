@@ -1,4 +1,4 @@
-## Marvel Heroes
+## Marvel Heroes ![](https://github.com/mgambati/marvel-heroes/workflows/CI/badge.svg)
 
 Projeto para Desafio Técnico da Softplan.
 
